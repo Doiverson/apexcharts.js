@@ -20,6 +20,8 @@ export default class Scatter {
       this.w.config.chart.animations.dynamicAnimation.enabled
   }
 
+  console.log("hello");
+
   draw(elSeries, j, opts) {
     let w = this.w
 
