@@ -20,8 +20,6 @@ export default class Scatter {
       this.w.config.chart.animations.dynamicAnimation.enabled
   }
 
-  console.log("hello");
-
   draw(elSeries, j, opts) {
     let w = this.w
 
@@ -117,6 +115,8 @@ export default class Scatter {
       value: w.globals.series[realIndex][j]
     })
     let circle = graphics.drawCircle(radius)
+
+    console.log(circle)
 
     if (w.config.series[i].data[dataPointIndex]) {
       if (w.config.series[i].data[dataPointIndex].fillColor) {
