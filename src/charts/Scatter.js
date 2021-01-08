@@ -116,8 +116,6 @@ export default class Scatter {
     })
     let circle = graphics.drawCircle(radius)
 
-    console.log(circle)
-
     if (w.config.series[i].data[dataPointIndex]) {
       if (w.config.series[i].data[dataPointIndex].fillColor) {
         pathFillCircle = w.config.series[i].data[dataPointIndex].fillColor
